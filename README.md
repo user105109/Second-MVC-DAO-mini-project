@@ -1,48 +1,66 @@
-🚗 Voiture Management (MVC + DAO PHP)
+# 🚗 Voiture Management (MVC + DAO PHP)
 
-A simple MVC + DAO-based CRUD application built with plain PHP to manage cars ("voitures").
-This project was created to deepen understanding of MVC architecture, DAO pattern, inheritance in models, and reusable database abstraction.
+A simple MVC + DAO-based CRUD application built with plain PHP to manage cars ("voitures").  
+This project was created to deepen understanding of **MVC architecture, DAO pattern, inheritance in models, and reusable database abstraction**.
 
-🚀 Features
-List all cars (voitures)
-Add a new car
-Update car information
-Delete a car
-View a single car
-MVC + DAO structure (Controller / Model / View / Base Model)
-Reusable database connection layer
-🧱 Tech Stack
-PHP (Vanilla)
-MySQL
-PDO for database connection
-MVC architecture
-DAO pattern (Data Access Object)
-Basic OOP (Inheritance, Static methods)
-📁 Project Structure
+---
+
+## 🚀 Features
+
+- List all cars (voitures)
+- Add a new car
+- Update car information
+- Delete a car
+- View a single car
+- MVC + DAO structure (Controller / Model / View / Base Model)
+- Reusable database connection layer
+
+---
+
+## 🧱 Tech Stack
+
+- PHP (Vanilla)
+- MySQL
+- PDO for database connection
+- MVC architecture
+- DAO pattern (Data Access Object)
+- Basic OOP (Inheritance, Static methods)
+
+---
+
+## 📁 Project Structure
+
+
 app/
 │
-├── Controllers/   → Application logic (Controllers)
-├── Models/        → Base Model + Voiture DAO (database logic)
-└── Views/         → HTML templates
+├── Controllers/ → Application logic (Controllers)
+├── Models/ → Base Model + Voiture DAO (database logic)
+└── Views/ → HTML templates
 
 resources/
-└── views/         → UI files (list, create, etc.)
+└── views/ → UI files (list, create, etc.)
 
-index.php          → Entry point (router)
-⚙️ Setup Instructions
-Clone the repository:
+index.php → Entry point (router)
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the repository
+```bash id="a1k9sd"
 git clone <repo-url>
-Create database:
-Create a database named voitures
-Create table voiture:
+2. Create database
+Create a database named: voitures
+Create table:
 voiture (
     id INT AUTO_INCREMENT PRIMARY KEY,
     modele VARCHAR(255),
     prix DECIMAL(10,2)
 )
-Configure database connection:
-Update credentials inside Model::database() if needed
-Run the project:
+3. Configure database connection
+Update credentials inside Model::database() (or your connection class)
+4. Run the project
 Use XAMPP / WAMP / Laragon
 Open index.php in browser
 🎯 Purpose of the Project
@@ -62,7 +80,7 @@ extends and inheritance in PHP
 Static methods and shared database connection
 Prepared statements and secure SQL execution
 Object state before database insertion (setters → create())
-🔄 Difference from simple MVC project
+🔄 Difference from Simple MVC Project
 
 Compared to a basic MVC project:
 
@@ -79,3 +97,6 @@ Use Composer + PSR-4 properly
 👨‍💻 Author
 
 Zouhair
+
+
+---
